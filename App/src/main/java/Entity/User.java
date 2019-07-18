@@ -7,6 +7,17 @@ public class User {
     private int age;
     private long userId;
 
+    public User(String fName, String lName, int age, long userId) {
+        this.fName = fName;
+        this.lName = lName;
+        this.age = age;
+        this.userId = userId;
+    }
+
+    public User() {
+
+    }
+
     public String getfName() {
         return fName;
     }
@@ -37,14 +48,5 @@ public class User {
 
     public void setUserId(long userId) {
         this.userId = userId;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "fName='" + fName + '\'' +
-                ", lName='" + lName + '\'' +
-                ", age=" + age +
-                '}';
     }
 }

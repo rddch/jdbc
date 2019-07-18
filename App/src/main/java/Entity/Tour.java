@@ -3,16 +3,14 @@ package Entity;
 public class Tour {
 
     private String tourName;
-    private boolean tourOrder;
     private long tourId;
-    private Hotel hotel;
 
-    public boolean isTourOrder() {
-        return tourOrder;
+    public Tour(String tourName, long tourId, Hotel hotel) {
+        this.tourName = tourName;
+        this.tourId = tourId;
     }
 
-    public void setTourOrder(boolean tourOrder) {
-        this.tourOrder = tourOrder;
+    public Tour() {
     }
 
     public String getTourName() {
@@ -31,11 +29,4 @@ public class Tour {
         this.tourId = tourId;
     }
 
-    @Override
-    public String toString() {
-        return "Tour{" +
-                "tourName='" + tourName + '\'' +
-                ", tourOrder=" + tourOrder +
-                '}';
-    }
 }

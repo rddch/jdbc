@@ -4,15 +4,15 @@ public class Hotel {
 
     private String hotelName;
     private String review;
-    private boolean hotelOrder;
     private long hotelId;
 
-    public boolean isHotelOrder() {
-        return hotelOrder;
+    public Hotel(String hotelName, String review, long hotelId) {
+        this.hotelName = hotelName;
+        this.review = review;
+        this.hotelId = hotelId;
     }
 
-    public void setHotelOrder(boolean hotelOrder) {
-        this.hotelOrder = hotelOrder;
+    public Hotel() {
     }
 
     public String getReview() {
@@ -37,14 +37,5 @@ public class Hotel {
 
     public void setHotelId(long hotelId) {
         this.hotelId = hotelId;
-    }
-
-    @Override
-    public String toString() {
-        return "Hotel{" +
-                "hotelName='" + hotelName + '\'' +
-                ", review='" + review + '\'' +
-                ", hotelOrder=" + hotelOrder +
-                '}';
     }
 }

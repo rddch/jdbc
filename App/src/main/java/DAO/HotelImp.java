@@ -1,32 +1,127 @@
 package DAO;
 
 import Entity.Hotel;
-
-import java.util.List;
+import pool.ConnectionPool;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Logger;
 
 public class HotelImp implements EntityDAO<Hotel> {
+
+    private ConnectionPool cp = ConnectionPool.getInstance();
+    Logger logger = Logger.getLogger(UserImp.class.getName());
+
     @Override
     public void add(Hotel hotel) {
-
+        PreparedStatement preparedStatement  = null;
+        try {
+            preparedStatement = cp.getConnection().prepareStatement("INSERT INTO  hotel (hotel_name, review) VALUES (?, ?)");
+            preparedStatement.setString(1, hotel.getHotelName());
+            preparedStatement.setString(2, hotel.getReview());
+            logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
-    public Hotel read(long id) {
-        return null;
+    public void read(long id) {
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = cp.getConnection().prepareStatement("SELECT * FROM hotel WHERE hotel_id = ?");
+            preparedStatement.setLong(1, id);
+            preparedStatement.execute();
+            ResultSet resultSet = preparedStatement.getResultSet();
+            resultSet.next();
+            long hotel_id = resultSet.getLong("hotel_id");
+            String hotel_name = resultSet.getString("hotel_name");
+            String review = resultSet.getString("review");
+            wiew(hotel_id, hotel_name, review);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
-    public List<Hotel> all() {
-        return null;
+    public void all() {
+        Statement statement = null;
+        try {
+            statement = cp.getConnection().createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM hotel");
+            while (resultSet.next()) {
+                long hotel_id = resultSet.getLong("hotel_id");
+                String hotel_name = resultSet.getString("hotel_name");
+                String review = resultSet.getString("review");
+                wiew(hotel_id, hotel_name, review);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                statement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
-    public void update(Hotel hotel) {
-
+    public void update(Hotel hotel, long id) {
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = cp.getConnection().prepareStatement("UPDATE hotel SET hotel_name = ?, review = ? WHERE hotel_id = ?");
+            preparedStatement.setString(1, hotel.getHotelName());
+            preparedStatement.setString(2, hotel.getReview());
+            preparedStatement.setLong(3, id);
+            logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
     public void delete(long id) {
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = cp.getConnection().prepareStatement("DELETE FROM hotel WHERE hotel_id = ?");
+            preparedStatement.setLong(1, id);
+            logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
+    void wiew(long hotel_id, String hotel_name, String review) {
+        logger.info(
+                " hotel{ hotel_id " + hotel_id +
+                        ", hotel_name " + hotel_name +
+                        ", review " + review +
+                        " }");
     }
 }
