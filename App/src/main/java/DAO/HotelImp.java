@@ -1,5 +1,6 @@
 package DAO;
 
+import Entity.Country;
 import Entity.Hotel;
 import pool.ConnectionPool;
 import java.sql.PreparedStatement;
@@ -8,18 +9,21 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Logger;
 
-public class HotelImp implements EntityDAO<Hotel> {
+public final class HotelImp implements EntityDAO<Hotel> {
 
     private ConnectionPool cp = ConnectionPool.getInstance();
     Logger logger = Logger.getLogger(UserImp.class.getName());
 
-    @Override
-    public void add(Hotel hotel) {
+    public void add(Hotel hotel, Country country) {
         PreparedStatement preparedStatement  = null;
         try {
-            preparedStatement = cp.getConnection().prepareStatement("INSERT INTO  hotel (hotel_name, review) VALUES (?, ?)");
+            preparedStatement = cp.getConnection().prepareStatement(
+                    "INSERT INTO  hotel (hotel_name, review, hotel_id, country_id) VALUES (?, ?, ?, ?)"
+            );
             preparedStatement.setString(1, hotel.getHotelName());
             preparedStatement.setString(2, hotel.getReview());
+            preparedStatement.setLong(3, hotel.getHotelId());
+            preparedStatement.setLong(4, country.getCountryId());
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
@@ -30,6 +34,11 @@ public class HotelImp implements EntityDAO<Hotel> {
                 e.printStackTrace();
             }
         }
+    }
+
+    @Override
+    public void add(Hotel hotel) throws SQLException {
+
     }
 
     @Override
@@ -83,7 +92,9 @@ public class HotelImp implements EntityDAO<Hotel> {
     public void update(Hotel hotel, long id) {
         PreparedStatement preparedStatement = null;
         try {
-            preparedStatement = cp.getConnection().prepareStatement("UPDATE hotel SET hotel_name = ?, review = ? WHERE hotel_id = ?");
+            preparedStatement = cp.getConnection().prepareStatement(
+                    "UPDATE hotel SET hotel_name = ?, review = ? WHERE hotel_id = ?"
+            );
             preparedStatement.setString(1, hotel.getHotelName());
             preparedStatement.setString(2, hotel.getReview());
             preparedStatement.setLong(3, id);

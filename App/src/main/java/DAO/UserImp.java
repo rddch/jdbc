@@ -17,10 +17,13 @@ public class UserImp implements EntityDAO<User> {
     public void add(User user) {
         PreparedStatement preparedStatement  = null;
         try {
-            preparedStatement = cp.getConnection().prepareStatement("INSERT INTO user (fname, lname, age) VALUES (?, ?, ?)");
+            preparedStatement = cp.getConnection().prepareStatement(
+                    "INSERT INTO user (fname, lname, age, user_id) VALUES (?, ?, ?, ?)"
+            );
             preparedStatement.setString(1, user.getfName());
             preparedStatement.setString(2, user.getlName());
             preparedStatement.setInt(3, user.getAge());
+            preparedStatement.setLong(4, user.getUserId());
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
@@ -86,7 +89,9 @@ public class UserImp implements EntityDAO<User> {
     public void update(User user, long id) {
         PreparedStatement preparedStatement = null;
         try {
-            preparedStatement = cp.getConnection().prepareStatement("UPDATE user SET fname = ?, lname = ?, age = ? WHERE user_id = ?");
+            preparedStatement = cp.getConnection().prepareStatement(
+                    "UPDATE user SET fname = ?, lname = ?, age = ? WHERE user_id = ?"
+            );
             preparedStatement.setString(1, user.getfName());
             preparedStatement.setString(2, user.getlName());
             preparedStatement.setInt(3, user.getAge());

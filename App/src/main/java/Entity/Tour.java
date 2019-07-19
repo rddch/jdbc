@@ -5,7 +5,7 @@ public class Tour {
     private String tourName;
     private long tourId;
 
-    public Tour(String tourName, long tourId, Hotel hotel) {
+    public Tour(String tourName, long tourId) {
         this.tourName = tourName;
         this.tourId = tourId;
     }

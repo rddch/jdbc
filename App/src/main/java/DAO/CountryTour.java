@@ -1,5 +1,6 @@
 package DAO;
 
+import Entity.Country;
 import Entity.Tour;
 import pool.ConnectionPool;
 
@@ -9,19 +10,19 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Logger;
 
-public class TourImp implements EntityDAO<Tour> {
+public class CountryTour {
 
     private ConnectionPool cp = ConnectionPool.getInstance();
     Logger logger = Logger.getLogger(UserImp.class.getName());
 
-    @Override
-    public void add(Tour tour) {
+
+    public void add(Country country, Tour tour) throws SQLException {
         PreparedStatement preparedStatement  = null;
         try {
             preparedStatement = cp.getConnection().prepareStatement(
-                    "INSERT INTO  tour (tour_name, tour_id) VALUES (?, ?)"
+                    "INSERT INTO  country_tour (country_id, tour_id) VALUES (?, ?)"
             );
-            preparedStatement.setString(1, tour.getTourName());
+            preparedStatement.setLong(1, country.getCountryId());
             preparedStatement.setLong(2, tour.getTourId());
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
@@ -35,18 +36,21 @@ public class TourImp implements EntityDAO<Tour> {
         }
     }
 
-    @Override
     public void read(long id) {
         PreparedStatement preparedStatement = null;
         try {
-            preparedStatement = cp.getConnection().prepareStatement("SELECT * FROM tour WHERE tour_id = ?");
+            preparedStatement = cp.getConnection().prepareStatement(
+                    "SELECT c.country, t.tour_name FROM country c " +
+                       "INNER JOIN tour t ON c.country_id = t.tour_id " +
+                       "WHERE country_id = ?"
+            );
             preparedStatement.setLong(1, id);
             preparedStatement.execute();
             ResultSet resultSet = preparedStatement.getResultSet();
             resultSet.next();
-            long tour_id = resultSet.getLong("tour_id");
+            String country = resultSet.getString("country");
             String tour_name = resultSet.getString("tour_name");
-            wiew(tour_id, tour_name);
+            wiew(tour_name, country);
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -58,16 +62,17 @@ public class TourImp implements EntityDAO<Tour> {
         }
     }
 
-    @Override
     public void all() {
         Statement statement = null;
         try {
             statement = cp.getConnection().createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM tour");
+            ResultSet resultSet = statement.executeQuery("SELECT c.country, t.tour_name FROM country c " +
+                                                            "INNER JOIN tour t ON c.country_id = t.tour_id"
+            );
             while (resultSet.next()) {
-                long tour_id = resultSet.getLong("tour_id");
-                String tour_name = resultSet.getString("tour_name");
-                wiew(tour_id, tour_name);
+                String tout_name = resultSet.getString("tour_name");
+                String country = resultSet.getString("country");
+                wiew(tout_name, country);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -80,30 +85,14 @@ public class TourImp implements EntityDAO<Tour> {
         }
     }
 
-    @Override
-    public void update(Tour tour, long id) {
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement("UPDATE tour SET tour_name = ? WHERE tour_id = ?");
-            preparedStatement.setString(1, tour.getTourName());
-            preparedStatement.setLong(2, id);
-            logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-    }
 
-    @Override
+
     public void delete(long id) {
         PreparedStatement preparedStatement = null;
         try {
-            preparedStatement = cp.getConnection().prepareStatement("DELETE FROM tour WHERE tour_id = ?");
+            preparedStatement = cp.getConnection().prepareStatement(
+                    "DELETE FROM country_tour WHERE country_id = ? OR tour_id = ?"
+            );
             preparedStatement.setLong(1, id);
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
@@ -117,10 +106,11 @@ public class TourImp implements EntityDAO<Tour> {
         }
     }
 
-    void wiew(long tour_id, String tour_name) {
+    void wiew(String tour_name, String country) {
         logger.info(
-                " country{ tour_id " + tour_id +
-                        ", tour_name " + tour_name +
+                " информация о туре { тур " + tour_name +
+                        ", в страну " + country +
                         " }");
     }
+
 }

@@ -1,6 +1,7 @@
 package DAO;
 
 import Entity.Country;
+import Entity.Hotel;
 import pool.ConnectionPool;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,8 +18,9 @@ public class CountryImp implements EntityDAO<Country> {
     public void add(Country country) {
         PreparedStatement preparedStatement  = null;
         try {
-            preparedStatement = cp.getConnection().prepareStatement("INSERT INTO  country (country) VALUES (?)");
+            preparedStatement = cp.getConnection().prepareStatement("INSERT INTO  country (country, country_id) VALUES (?, ?)");
             preparedStatement.setString(1, country.getCountry());
+            preparedStatement.setLong(2, country.getCountryId());
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
@@ -99,7 +101,27 @@ public class CountryImp implements EntityDAO<Country> {
     public void delete(long id) {
         PreparedStatement preparedStatement = null;
         try {
-            preparedStatement = cp.getConnection().prepareStatement("DELETE FROM country WHERE country_id = ?");
+            preparedStatement = cp.getConnection().prepareStatement(
+                    "UPDATE hotel SET country_id = null WHERE country_id = ?"
+            );
+            preparedStatement.setLong(1, id);
+            logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
+
+            preparedStatement = cp.getConnection().prepareStatement(
+                    "DELETE FROM hotel WHERE country_id = ?"
+            );
+            preparedStatement.setLong(1, id);
+            logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
+
+            preparedStatement = cp.getConnection().prepareStatement(
+                    "DELETE FROM country_tour WHERE country_id = ?"
+            );
+            preparedStatement.setLong(1, id);
+            logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
+
+            preparedStatement = cp.getConnection().prepareStatement(
+                    "DELETE FROM country WHERE country_id = ?"
+            );
             preparedStatement.setLong(1, id);
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
