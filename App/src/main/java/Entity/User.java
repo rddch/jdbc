@@ -1,11 +1,16 @@
 package Entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+@Entity
 public class User {
-
+    @Id
+    @GeneratedValue
+    private long userId;
     private String fName;
     private String lName;
     private int age;
-    private long userId;
 
     public User(String fName, String lName, int age, long userId) {
         this.fName = fName;

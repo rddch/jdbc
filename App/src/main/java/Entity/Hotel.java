@@ -1,10 +1,16 @@
 package Entity;
 
-public class Hotel {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
+@Entity
+public class Hotel {
+    @Id
+    @GeneratedValue
+    private long hotelId;
     private String hotelName;
     private String review;
-    private long hotelId;
     private long countryId;
 
     public Hotel(String hotelName, String review, long hotelId, long countryId) {

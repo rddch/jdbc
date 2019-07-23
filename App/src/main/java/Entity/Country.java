@@ -1,10 +1,16 @@
 package Entity;
 
-public class Country {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
-    private String country;
+@Entity
+public class Country {
+    @Id
+    @GeneratedValue
     private long countryId;
 
+    private String country;
     public Country(String country, long countryId) {
         this.country = country;
         this.countryId = countryId;

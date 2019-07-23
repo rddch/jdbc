@@ -10,7 +10,7 @@
   <packaging>war</packaging>
 
   <name>com.derkach Maven Webapp</name>
-  <!-- FIXME change it to the project's website -->
+  <!-- App -->
   <url>http://www.example.com</url>
 
   <properties>
@@ -32,8 +32,29 @@
           <artifactId>mysql-connector-java</artifactId>
           <version>8.0.16</version>
       </dependency>
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.4.3.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.3.2</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources/META-INF</directory>
+        <targetPath>META-INF</targetPath>
+        <includes>
+          <include>persistence.xml</include>
+        </includes>
+      </resource>
+    </resources>
     <finalName>com.derkach</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>

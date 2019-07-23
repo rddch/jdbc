@@ -1,0 +1,25 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="App">
+        <description>
+            Persistence Unit For App
+        </description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>Entity.Country</class>
+        <class>Entity.Hotel</class>
+        <class>Entity.Tour</class>
+        <class>Entity.User</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/travel_agency" />
+            <property name="javax.persistence.jdbc.user" value="ruslan" />
+            <property name="javax.persistence.jdbc.password" value="root" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
+        </properties>
+    </persistence-unit>
+</persistence>

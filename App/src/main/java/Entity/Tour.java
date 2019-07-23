@@ -1,9 +1,15 @@
 package Entity;
 
-public class Tour {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
-    private String tourName;
+@Entity
+public class Tour {
+    @Id
+    @GeneratedValue
     private long tourId;
+    private String tourName;
 
     public Tour(String tourName, long tourId) {
         this.tourName = tourName;
