@@ -3,6 +3,7 @@ import Entity.Country;
 import Entity.Hotel;
 import Entity.Tour;
 import Entity.User;
+import pool.MyConnectionPool;
 
 import java.sql.SQLException;
 
@@ -19,26 +20,26 @@ public class Test {
     Tour minsk = new Tour("Minsk", 1);
     Tour kiev = new Tour("Kiev", 2);
 
-    new UserImp().add(rita);
-    new UserImp().add(viktor);
-    new CountryImp().add(blr);
-    new CountryImp().add(ukr);
-    new CountryImp().add(ger);
-
-    new HotelImp().add(roylPlaza, blr);
-    new HotelImp().add(goldOfSee, ukr);
-
-    new TourImp().add(minsk);
-    new TourImp().add(kiev);
-
-    new CountryTour().add(blr,minsk);
-    new CountryTour().add(ukr,kiev);
-
-    new TourHotel().add(minsk, roylPlaza);
-    new TourHotel().add(kiev, goldOfSee);
-
-    new UserTour().add(viktor, minsk);
-    new UserTour().add(rita,kiev);
+//    new UserImp().add(rita);
+//    new UserImp().add(viktor);
+//    new CountryImp().add(blr);
+//    new CountryImp().add(ukr);
+//    new CountryImp().add(ger);
+//
+//    new HotelImp().add(roylPlaza, blr);
+//    new HotelImp().add(goldOfSee, ukr);
+//
+//    new TourImp().add(minsk);
+//    new TourImp().add(kiev);
+//
+//    new CountryTour().add(blr,minsk);
+//    new CountryTour().add(ukr,kiev);
+//
+//    new TourHotel().add(minsk, roylPlaza);
+//    new TourHotel().add(kiev, goldOfSee);
+//
+//    new UserTour().add(viktor, minsk);
+//    new UserTour().add(rita,kiev);
 
     }
 }

@@ -2,7 +2,7 @@ package DAO;
 
 import Entity.Country;
 import Entity.Hotel;
-import pool.ConnectionPool;
+import pool.MyConnectionPool;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public final class HotelImp implements EntityDAO<Hotel> {
 
-    private ConnectionPool cp = ConnectionPool.getInstance();
+    private MyConnectionPool cp = MyConnectionPool.getInstance();
     Logger logger = Logger.getLogger(UserImp.class.getName());
 
     public void add(Hotel hotel, Country country) {

@@ -1,7 +1,7 @@
 package DAO;
 
 import Entity.Tour;
-import pool.ConnectionPool;
+import pool.MyConnectionPool;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class TourImp implements EntityDAO<Tour> {
 
-    private ConnectionPool cp = ConnectionPool.getInstance();
+    private MyConnectionPool cp = MyConnectionPool.getInstance();
     Logger logger = Logger.getLogger(UserImp.class.getName());
 
     @Override

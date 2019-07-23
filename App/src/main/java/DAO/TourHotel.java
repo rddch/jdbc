@@ -1,9 +1,8 @@
 package DAO;
 
-import Entity.Country;
 import Entity.Hotel;
 import Entity.Tour;
-import pool.ConnectionPool;
+import pool.MyConnectionPool;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -11,7 +10,7 @@ import java.util.logging.Logger;
 
 public class TourHotel {
 
-    private ConnectionPool cp = ConnectionPool.getInstance();
+    private MyConnectionPool cp = MyConnectionPool.getInstance();
     Logger logger = Logger.getLogger(UserImp.class.getName());
 
 
