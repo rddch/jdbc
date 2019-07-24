@@ -1,4 +1,5 @@
-import Entity.Country;
+import entity.Country;
+import entity.Hotel;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,7 +8,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import static org.junit.Assert.assertNotNull;
 
 public class AppTest {
     private EntityManager em;
@@ -28,11 +28,10 @@ public class AppTest {
 
     @Test
     public void shouldFindCountry() {
-        Country country = new Country();
-        country.setCountry("BLR");
-        em.persist(country);
-        Country result = em.find(Country.class, 1L);
-        assertNotNull(result);
+        Country country = em.find(Country.class, 1L);
+        Hotel hotel = new Hotel();
+        hotel.setCountry(country);
+        em.persist(hotel);
     }
 
     @After

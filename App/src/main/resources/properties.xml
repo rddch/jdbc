@@ -8,10 +8,10 @@
             Persistence Unit For App
         </description>
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>Entity.Country</class>
-        <class>Entity.Hotel</class>
-        <class>Entity.Tour</class>
-        <class>Entity.User</class>
+        <class>entity.Country</class>
+        <class>entity.Hotel</class>
+        <class>entity.Tour</class>
+        <class>entity.User</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/travel_agency" />
@@ -20,6 +20,14 @@
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
             <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.hbm2ddl.auto" value="create" />
+            <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/travel_agency"/>
+            <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/travel_agency"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost:3306/travel_agency"/>
+            <property name="openjpa.ConnectionDriverName" value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/travel_agency"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
         </properties>
     </persistence-unit>
 </persistence>

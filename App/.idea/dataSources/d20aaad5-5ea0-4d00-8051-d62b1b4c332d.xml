@@ -915,207 +915,379 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="230" parent="7" name="country"/>
-    <table id="231" parent="7" name="country_tour"/>
-    <table id="232" parent="7" name="hotel"/>
-    <table id="233" parent="7" name="tour"/>
-    <table id="234" parent="7" name="tour_hotel"/>
-    <table id="235" parent="7" name="user"/>
-    <table id="236" parent="7" name="user_tour"/>
-    <column id="237" parent="230" name="country_id">
+    <table id="230" parent="7" name="Country">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="231" parent="7" name="Country_Tour">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="232" parent="7" name="Hotel">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="233" parent="7" name="Hotel_Tour">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="234" parent="7" name="Tour">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="235" parent="7" name="User">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="236" parent="7" name="User_Tour">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="237" parent="7" name="country"/>
+    <table id="238" parent="7" name="country_tour"/>
+    <table id="239" parent="7" name="hotel"/>
+    <table id="240" parent="7" name="tour"/>
+    <table id="241" parent="7" name="tour_hotel"/>
+    <table id="242" parent="7" name="user"/>
+    <table id="243" parent="7" name="user_tour"/>
+    <column id="244" parent="230" name="countryId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="245" parent="230" name="country">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="246" parent="231" name="countries_countryId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="247" parent="231" name="tours_tourId">
+      <Position>2</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="248" parent="231" name="FK39myunnqssnxt9inwss4l75mh">
+      <ColNames>tours_tourId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="249" parent="231" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>countries_countryId
+tours_tourId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="250" parent="232" name="hotelId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="251" parent="232" name="hotelName">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="252" parent="232" name="review">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="253" parent="232" name="country_countryId">
+      <Position>4</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="254" parent="232" name="FKrru91d8qdcgobe09eu2nq3iea">
+      <ColNames>country_countryId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="255" parent="232" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>hotelId
+hotel_id
+hotelId
+hotel_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="256" parent="233" name="hotels_hotelId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="257" parent="233" name="tours_tourId">
+      <Position>2</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="258" parent="233" name="FK6xpyupc9wma2lkm5inaafd84x">
+      <ColNames>tours_tourId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="259" parent="233" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>hotels_hotelId
+tours_tourId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="260" parent="234" name="tourId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="261" parent="234" name="tourName">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="262" parent="234" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>tour_id
+tour_id
+tourId
+tourId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="263" parent="235" name="userId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="264" parent="235" name="age">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="235" name="fName">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="266" parent="235" name="lName">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="267" parent="236" name="users_userId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="268" parent="236" name="tours_tourId">
+      <Position>2</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="269" parent="236" name="FKcc2gjhbjam1oe9jex2l2y6dih">
+      <ColNames>tours_tourId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="270" parent="236" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>users_userId
+tours_tourId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="271" parent="237" name="country_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="238" parent="230" name="country">
+    <column id="272" parent="237" name="country">
       <Position>2</Position>
       <DataType>char(3)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="239" parent="230" name="PRIMARY">
+    <key id="273" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>country_id</ColNames>
+      <ColNames>countryId
+country_id
+country_id
+countryId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="240" parent="231" name="country_id">
+    <column id="274" parent="238" name="country_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="231" name="tour_id">
+    <column id="275" parent="238" name="tour_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="242" parent="231" name="country_tour_country_country_id_fk">
+    <index id="276" parent="238" name="country_tour_country_country_id_fk">
       <ColNames>country_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="243" parent="231" name="country_tour_tour_tour_id_fk">
+    <index id="277" parent="238" name="country_tour_tour_tour_id_fk">
       <ColNames>tour_id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="244" parent="231" name="country_tour_country_country_id_fk">
+    <foreign-key id="278" parent="238" name="country_tour_country_country_id_fk">
       <ColNames>country_id</ColNames>
       <RefSchemaName>travel_agency</RefSchemaName>
       <RefTableName>country</RefTableName>
       <RefColNames>country_id</RefColNames>
     </foreign-key>
-    <foreign-key id="245" parent="231" name="country_tour_tour_tour_id_fk">
+    <foreign-key id="279" parent="238" name="country_tour_tour_tour_id_fk">
       <ColNames>tour_id</ColNames>
       <RefSchemaName>travel_agency</RefSchemaName>
       <RefTableName>tour</RefTableName>
       <RefColNames>tour_id</RefColNames>
     </foreign-key>
-    <column id="246" parent="232" name="hotel_id">
+    <column id="280" parent="239" name="hotel_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="232" name="hotel_name">
+    <column id="281" parent="239" name="hotel_name">
       <Position>2</Position>
       <DataType>varchar(55)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="232" name="review">
+    <column id="282" parent="239" name="review">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="232" name="country_id">
+    <column id="283" parent="239" name="country_id">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="250" parent="232" name="hotel_country_country_id_fk">
+    <index id="284" parent="239" name="hotel_country_country_id_fk">
       <ColNames>country_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="251" parent="232" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>hotel_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="252" parent="232" name="hotel_country_country_id_fk">
+    <foreign-key id="285" parent="239" name="hotel_country_country_id_fk">
       <ColNames>country_id</ColNames>
       <RefSchemaName>travel_agency</RefSchemaName>
       <RefTableName>country</RefTableName>
       <RefColNames>country_id</RefColNames>
     </foreign-key>
-    <column id="253" parent="233" name="tour_id">
+    <column id="286" parent="240" name="tour_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="254" parent="233" name="tour_name">
+    <column id="287" parent="240" name="tour_name">
       <Position>2</Position>
       <DataType>varchar(55)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="255" parent="233" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>tour_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="256" parent="234" name="tour_id">
+    <column id="288" parent="241" name="tour_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="234" name="hotel_id">
+    <column id="289" parent="241" name="hotel_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="258" parent="234" name="tour_hotel_tour_tour_id_fk">
+    <index id="290" parent="241" name="tour_hotel_tour_tour_id_fk">
       <ColNames>tour_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="259" parent="234" name="tour_hotel_hotel_hotel_id_fk">
+    <index id="291" parent="241" name="tour_hotel_hotel_hotel_id_fk">
       <ColNames>hotel_id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="260" parent="234" name="tour_hotel_tour_tour_id_fk">
+    <foreign-key id="292" parent="241" name="tour_hotel_tour_tour_id_fk">
       <ColNames>tour_id</ColNames>
       <RefSchemaName>travel_agency</RefSchemaName>
       <RefTableName>tour</RefTableName>
       <RefColNames>tour_id</RefColNames>
     </foreign-key>
-    <foreign-key id="261" parent="234" name="tour_hotel_hotel_hotel_id_fk">
+    <foreign-key id="293" parent="241" name="tour_hotel_hotel_hotel_id_fk">
       <ColNames>hotel_id</ColNames>
       <RefSchemaName>travel_agency</RefSchemaName>
       <RefTableName>hotel</RefTableName>
       <RefColNames>hotel_id</RefColNames>
     </foreign-key>
-    <column id="262" parent="235" name="user_id">
+    <column id="294" parent="242" name="user_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="235" name="fname">
+    <column id="295" parent="242" name="fname">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="235" name="lname">
+    <column id="296" parent="242" name="lname">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="235" name="age">
+    <column id="297" parent="242" name="age">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="266" parent="235" name="PRIMARY">
+    <key id="298" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>user_id</ColNames>
+      <ColNames>user_id
+userId
+userId
+user_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="267" parent="236" name="user_id">
+    <column id="299" parent="243" name="user_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="236" name="tour_id">
+    <column id="300" parent="243" name="tour_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="269" parent="236" name="user_tour_user_user_id_fk">
+    <index id="301" parent="243" name="user_tour_user_user_id_fk">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="270" parent="236" name="user_tour_tour_tour_id_fk">
+    <index id="302" parent="243" name="user_tour_tour_tour_id_fk">
       <ColNames>tour_id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="271" parent="236" name="user_tour_user_user_id_fk">
+    <foreign-key id="303" parent="243" name="user_tour_user_user_id_fk">
       <ColNames>user_id</ColNames>
       <RefSchemaName>travel_agency</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>user_id</RefColNames>
     </foreign-key>
-    <foreign-key id="272" parent="236" name="user_tour_tour_tour_id_fk">
+    <foreign-key id="304" parent="243" name="user_tour_tour_tour_id_fk">
       <ColNames>tour_id</ColNames>
       <RefSchemaName>travel_agency</RefSchemaName>
       <RefTableName>tour</RefTableName>

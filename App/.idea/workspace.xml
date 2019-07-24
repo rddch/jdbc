@@ -1,23 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90344d6d-7694-4ad1-a50d-b57b7bec3ef8" name="Default Changelist" comment="jpa&#10;add entity&#10;test class">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/shouldStartHibernate.java" afterDir="false" />
+    <list default="true" id="90344d6d-7694-4ad1-a50d-b57b7bec3ef8" name="Default Changelist" comment="jpa&#10;mapping">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao_jdbc/CountryImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao_jdbc/CountryTour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao_jdbc/EntityDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao_jdbc/HotelImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao_jdbc/TourHotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao_jdbc/TourImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao_jdbc/UserImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao_jdbc/UserTour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Tour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/AppMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d20aaad5-5ea0-4d00-8051-d62b1b4c332d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d20aaad5-5ea0-4d00-8051-d62b1b4c332d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pool/MyConnectionDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Entity/Country.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Entity/Hotel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Tour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Entity/Tour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/CountryImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/CountryTour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/EntityDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/HotelImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/TourHotel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/TourImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserTour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Hotel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Tour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/CountryImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/CountryTour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/EntityDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/HotelImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/TourHotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/TourImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/UserImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/UserTour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Hotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Tour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/User.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,22 +87,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AppTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/AppMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Entity/Country.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="210">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,8 +99,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao_jdbc/UserTour.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#904#905#0" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
+                <element signature="e#977#978#0" expanded="true" />
+                <element signature="e#1020#1021#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao_jdbc/UserImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="68" column="58" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Tour.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="19" column="84" lean-forward="true" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -98,6 +154,7 @@
         <option value="Tag Library Descriptor" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -118,22 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Entities/Country.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entities/Hotel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entities/Tour.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entities/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/dtoDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTO/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTO/Country.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTO/Hotel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/hotelDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/userDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/tourDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTO/Tour.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/userDAOimp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/countryDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entitys/Country.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entitys/Hotel.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entitys/Tour.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entitys/User.java" />
@@ -162,12 +203,29 @@
         <option value="$PROJECT_DIR$/src/test/java/shouldStartHibernate.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/AppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entity/Hotel.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entity/Tour.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Entity/Country.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Service/HibernateExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/CountryEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/CountryTourEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/HotelEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao_hidernate/CountryEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao_hidernate/TourEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao_hidernate/TourHotelEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao_hidernate/UserEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao_hidernate/UserTourEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/file.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Tour.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Hotel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Country.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/AppMain.java" />
       </list>
     </option>
   </component>
@@ -202,7 +260,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,49 +289,34 @@
               <item name="App" type="b2602c69:ProjectViewProjectNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="d20aaad5-5ea0-4d00-8051-d62b1b4c332d" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563893975642" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563978348680" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$USER_HOME$/Изображения" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -288,7 +330,14 @@
       <recent name="" />
       <recent name="DAO" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="dao" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -307,7 +356,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="Application.AppMain">
+    <configuration name="AppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.AppMain" />
+      <module name="App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="App" />
@@ -337,6 +399,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppMain" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.Test" />
       </list>
@@ -361,7 +424,10 @@
       <workItem from="1563543739719" duration="2644000" />
       <workItem from="1563778346261" duration="2144000" />
       <workItem from="1563872655305" duration="2773000" />
-      <workItem from="1563878234339" duration="15245000" />
+      <workItem from="1563878234339" duration="15800000" />
+      <workItem from="1563948984087" duration="2654000" />
+      <workItem from="1563957397422" duration="4809000" />
+      <workItem from="1563965929435" duration="3540000" />
     </task>
     <task id="LOCAL-00001" summary="jpa">
       <created>1563882900279</created>
@@ -370,22 +436,17 @@
       <option name="project" value="LOCAL" />
       <updated>1563882900279</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="jpa&#10;add entity&#10;test class">
+      <created>1563894079345</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563894079345</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest - 2019.07.23 at 17h 16m 22s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.07.23 at 17h 25m 34s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.07.23 at 17h 31m 45s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.07.23 at 17h 42m 00s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest - 2019.07.23 at 17h 45m 08s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
@@ -404,9 +465,21 @@
     <history-entry file="AppTest - 2019.07.23 at 17h 50m 36s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest - 2019.07.24 at 11h 27m 06s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.07.24 at 11h 50m 25s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.07.24 at 12h 09m 30s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.07.24 at 15h 20m 18s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99641000" />
+    <option name="totallyTimeSpent" value="119897000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,26 +493,26 @@
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <layout>
-      <window_info id="Persistence" order="0" side_tool="true" />
+      <window_info id="Persistence" order="0" sideWeight="0.48058254" side_tool="true" weight="0.28863636" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Designer" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.28863636" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.51941746" visible="true" weight="0.28863636" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32954547" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5060606" side_tool="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5068182" side_tool="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32954547" />
       <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49924242" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.4939394" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49318182" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="11" sideWeight="0.49924242" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -449,9 +522,9 @@
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.32954547" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.32954547" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.32954547" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
     </layout>
   </component>
@@ -529,177 +602,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jpa" />
     <MESSAGE value="jpa&#10;add entity&#10;test class" />
-    <option name="LAST_COMMIT_MESSAGE" value="jpa&#10;add entity&#10;test class" />
+    <MESSAGE value="jpa&#10;mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="jpa&#10;mapping" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/EntityDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/HotelImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/UserTour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/TourHotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/TourImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/UserImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/CountryImpTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pool/Pool.java" />
-    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.logging/java/util/logging/Level.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pool/ConnectionPool.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pool/MyConnectionDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpa/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/persistence.xml.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/model/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pool/MyConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="80" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/CountryTourTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CountryTourTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/CountryImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DAO/CountryImpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/CountryTour.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DAO/CountryImpTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao_jdbc/CountryTour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
@@ -709,81 +621,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shouldStartHibernate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/tour_hotel">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/hotel">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/user_tour">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/Hotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/Tour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/persistence.xml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -865,15 +703,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/tour">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/shouldStartHibernate.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/HibernateExample.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/CountryEntity.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/CountryTourEntity.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao_hidernate/HotelEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao_hidernate/TourEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao_hidernate/TourHotelEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao_hidernate/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao_hidernate/UserTourEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao_hidernate/CountryTourEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao_hidernate/CountryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="89" />
+        </state>
+      </provider>
     </entry>
     <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/country_tour">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -882,10 +789,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/user_tour">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -896,23 +810,184 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Hotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+        <state relative-caret-position="157">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/Country.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Country.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="585">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Tour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="84" lean-forward="true" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/hotel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/tour">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/Country_Tour">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/Hotel_Tour">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/tour_hotel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/User_Tour">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/User">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/Tour">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/Hotel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/Country">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/AppMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao_jdbc/UserTour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao_jdbc/UserImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="68" column="58" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
         </state>
       </provider>
     </entry>
