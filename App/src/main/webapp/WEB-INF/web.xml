@@ -10,7 +10,7 @@
   <display-name>Archetype Created Web Application</display-name>
     <servlet>
         <servlet-name>AddServlet</servlet-name>
-        <servlet-class>servlets.AddServlet</servlet-class>
+        <servlet-class>servlets.AddUserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>AddServlet</servlet-name>
@@ -18,7 +18,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ListServlet</servlet-name>
-        <servlet-class>servlets.ListServlet</servlet-class>
+        <servlet-class>servlets.ListUserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ListServlet</servlet-name>

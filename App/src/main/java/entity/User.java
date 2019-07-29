@@ -1,7 +1,11 @@
 package entity;
 
+import org.hibernate.Session;
+import utils.HibernateSessionFactory;
+
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -65,5 +69,24 @@ public class User {
 
     public void setUserId(long userId) {
         this.userId = userId;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", fName='" + fName + '\'' +
+                ", lName='" + lName + '\'' +
+                ", age=" + age +
+                ", tours=" + tours +
+                '}';
+    }
+
+    public List<User> listUser() {
+        Session session = HibernateSessionFactory.getSessionFactory().openSession();
+        session.beginTransaction();
+        List<User> result = session.createQuery("FROM entity.User").list();
+        session.getTransaction().commit();
+        return result;
     }
 }

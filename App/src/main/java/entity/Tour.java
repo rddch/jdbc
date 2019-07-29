@@ -1,7 +1,11 @@
 package entity;
 
+import org.hibernate.Session;
+import utils.HibernateSessionFactory;
+
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -67,4 +71,22 @@ public class Tour {
         this.tourId = tourId;
     }
 
+    public List<Tour> listTour() {
+        Session session = HibernateSessionFactory.getSessionFactory().openSession();
+        session.beginTransaction();
+        List<Tour> result = session.createQuery("FROM entity.Tour").list();
+        session.getTransaction().commit();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Tour{" +
+                "tourId=" + tourId +
+                ", tourName='" + tourName + '\'' +
+                ", countries=" + countries +
+                ", hotels=" + hotels +
+                ", users=" + users +
+                '}';
+    }
 }

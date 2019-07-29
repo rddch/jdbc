@@ -8,7 +8,7 @@ import javax.servlet.RequestDispatcher;
 import java.io.IOException;
 
 
-public class AddServlet extends javax.servlet.http.HttpServlet {
+public class AddUserServlet extends javax.servlet.http.HttpServlet {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         Session session = HibernateSessionFactory.getSessionFactory().openSession();
         session.beginTransaction();

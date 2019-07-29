@@ -1,5 +1,8 @@
 package entity;
 
+import org.hibernate.Session;
+import utils.HibernateSessionFactory;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -61,5 +64,23 @@ public class Country {
 
     public void setCountryId(long countryId) {
         this.countryId = countryId;
+    }
+
+    public List<Country> listCountry() {
+        Session session = HibernateSessionFactory.getSessionFactory().openSession();
+        session.beginTransaction();
+        List<Country> result = session.createQuery("FROM entity.Country").list();
+        session.getTransaction().commit();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "countryId=" + countryId +
+                ", country='" + country + '\'' +
+                ", hotels=" + hotels +
+                ", tours=" + tours +
+                '}';
     }
 }

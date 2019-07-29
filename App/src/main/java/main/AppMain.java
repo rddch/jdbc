@@ -60,5 +60,7 @@ public class AppMain {
         session.save(blr);
         session.getTransaction().commit();
         session.close();
+
+        user.listUser();
     }
 }
