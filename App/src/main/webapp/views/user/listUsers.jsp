@@ -12,14 +12,14 @@
     <title>List</title>
 </head>
 <body>
+<h1> Список пользователей </h1>
 <%
-    List<User> user = (List<User>) request.getAttribute("listUser");
-    if (user != null && !user.isEmpty()) {
-        for (Object o : user) {
+    List<User> users = (List<User>) request.getAttribute("listUsers");
+    if (users != null && !users.isEmpty()) {
+        for (Object o : users) {
             out.print("<li>" + o.toString() + "/li");
         }
     }
 %>
-
 </body>
 </html>

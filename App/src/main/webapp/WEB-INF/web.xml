@@ -8,21 +8,72 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
   <display-name>Archetype Created Web Application</display-name>
+    <!--user-->
     <servlet>
-        <servlet-name>AddServlet</servlet-name>
-        <servlet-class>servlets.AddUserServlet</servlet-class>
+        <servlet-name>AddUserServlet</servlet-name>
+        <servlet-class>servlets.user.AddUserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>AddServlet</servlet-name>
-        <url-pattern>/add</url-pattern>
+        <servlet-name>AddUserServlet</servlet-name>
+        <url-pattern>/addUser</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>ListServlet</servlet-name>
-        <servlet-class>servlets.ListUserServlet</servlet-class>
+        <servlet-name>ListUserServlet</servlet-name>
+        <servlet-class>servlets.user.ListUserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ListServlet</servlet-name>
-        <url-pattern>/list</url-pattern>
+        <servlet-name>ListUserServlet</servlet-name>
+        <url-pattern>/listUsers</url-pattern>
+    </servlet-mapping>
+    <!--tour-->
+    <servlet>
+        <servlet-name>AddTourServlet</servlet-name>
+        <servlet-class>servlets.tour.AddTourServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddTourServlet</servlet-name>
+        <url-pattern>/addTour</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ListTourServlet</servlet-name>
+        <servlet-class>servlets.tour.ListTourServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListTourServlet</servlet-name>
+        <url-pattern>/listTours</url-pattern>
+    </servlet-mapping>
+    <!--hotel-->
+    <servlet>
+        <servlet-name>AddHotelServlet</servlet-name>
+        <servlet-class>servlets.hotel.AddHotelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddHotelServlet</servlet-name>
+        <url-pattern>/addHotel</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ListHotelServlet</servlet-name>
+        <servlet-class>servlets.hotel.ListHotelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListHotelServlet</servlet-name>
+        <url-pattern>/listHotels</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddCountryServlet</servlet-name>
+        <servlet-class>servlets.country.AddCountryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCountryServlet</servlet-name>
+        <url-pattern>/addCountry</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ListCountryServlet</servlet-name>
+        <servlet-class>servlets.country.ListCountryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListCountryServlet</servlet-name>
+        <url-pattern>/listCountry</url-pattern>
     </servlet-mapping>
 </web-app>
 

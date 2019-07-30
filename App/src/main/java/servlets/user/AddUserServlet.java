@@ -1,4 +1,4 @@
-package servlets;
+package servlets.user;
 
 import entity.User;
 import org.hibernate.Session;
@@ -25,7 +25,7 @@ public class AddUserServlet extends javax.servlet.http.HttpServlet {
     }
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/user/add.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/user/addCountry.jsp");
         requestDispatcher.forward(request, response);
     }
 }

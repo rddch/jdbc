@@ -6,33 +6,26 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90344d6d-7694-4ad1-a50d-b57b7bec3ef8" name="Default Changelist" comment="jpa&#10;mapping">
-      <change afterPath="$PROJECT_DIR$/.idea/App.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/AddCountryServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/AddHotelServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/AddTourServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/ListCountryServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/ListHotelServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/ListTourServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/country/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/country/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/hotel/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/hotel/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/tour/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/tour/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d20aaad5-5ea0-4d00-8051-d62b1b4c332d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d20aaad5-5ea0-4d00-8051-d62b1b4c332d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="90344d6d-7694-4ad1-a50d-b57b7bec3ef8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/AppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/AppMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/AddUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/ListUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AddCountryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/country/AddCountryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AddHotelServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/hotel/AddHotelServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AddTourServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/tour/AddTourServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AddUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/user/AddUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ListCountryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/country/ListCountryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ListHotelServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/hotel/ListHotelServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ListTourServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/tour/ListTourServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ListUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/user/ListUserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/country/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/country/addCountry.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/country/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/listUsers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/hotel/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/hotel/addHotel.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/hotel/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/hotel/listHotels.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/tour/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/tour/addTour.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/tour/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/tour/listTours.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/addUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/country/listCountries.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,12 +105,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-152" />
-    <option name="y" value="294" />
-    <option name="width" value="653" />
-    <option name="height" value="562" />
-  </component>
+  <component name="ProjectId" id="1OimQNIWrd0SMnP6eTaw0Cm8G8H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
@@ -306,6 +294,16 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -331,6 +329,7 @@
       <workItem from="1563965929435" duration="3540000" />
       <workItem from="1564138834102" duration="5816000" />
       <workItem from="1564151767084" duration="1629000" />
+      <workItem from="1564468798297" duration="4720000" />
     </task>
     <task id="LOCAL-00001" summary="jpa">
       <created>1563882900279</created>
@@ -346,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563894079345</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add servlets&#10;add views">
+      <created>1564417568112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564417568112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -466,7 +472,8 @@
     <MESSAGE value="jpa" />
     <MESSAGE value="jpa&#10;add entity&#10;test class" />
     <MESSAGE value="jpa&#10;mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="jpa&#10;mapping" />
+    <MESSAGE value="add servlets&#10;add views" />
+    <option name="LAST_COMMIT_MESSAGE" value="add servlets&#10;add views" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

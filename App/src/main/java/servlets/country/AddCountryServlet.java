@@ -1,4 +1,4 @@
-package servlets;
+package servlets.country;
 
 import entity.Country;
 import org.hibernate.Session;
@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "AddCountryServlet")
 public class AddCountryServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Session session = HibernateSessionFactory.getSessionFactory().openSession();

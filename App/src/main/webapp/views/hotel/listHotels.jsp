@@ -1,4 +1,4 @@
-<%@ page import="entity.User" %>
+<%@ page import="entity.Hotel" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: ruslan
@@ -13,9 +13,9 @@
 </head>
 <body>
 <%
-    List<User> user = (List<User>) request.getAttribute("listUser");
-    if (user != null && !user.isEmpty()) {
-        for (Object o : user) {
+    List<Hotel> hotels = (List<Hotel>) request.getAttribute("listHotels");
+    if (hotels != null && !hotels.isEmpty()) {
+        for (Object o : hotels) {
             out.print("<li>" + o.toString() + "/li");
         }
     }

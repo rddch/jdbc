@@ -1,6 +1,6 @@
-package servlets;
+package servlets.country;
 
-import entity.Hotel;
+import entity.Country;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,16 +11,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "ListHotelServlet")
-public class ListHotelServlet extends HttpServlet {
+public class ListCountryServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Hotel> hotels = new Hotel().listHotel();
-        request.setAttribute("listHotels", hotels);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/hotel/list.jsp");
+        List<Country> countries = new Country().listCountry();
+        request.setAttribute("listCountries", countries);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/country/listCountries.jsp");
         requestDispatcher.forward(request, response);
     }
 }
