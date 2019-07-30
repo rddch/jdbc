@@ -7,25 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90344d6d-7694-4ad1-a50d-b57b7bec3ef8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/AddHotelServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/AddTourServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/App.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AddCountryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/country/AddCountryServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AddHotelServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/hotel/AddHotelServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AddTourServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/tour/AddTourServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AddUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/user/AddUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ListCountryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/country/ListCountryServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ListHotelServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/hotel/ListHotelServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ListTourServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/tour/ListTourServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ListUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/user/ListUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/country/AddCountryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/AddCountryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/country/ListCountryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/ListCountryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/hotel/AddHotelServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/hotel/ListHotelServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/ListHotelServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/tour/AddTourServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/tour/ListTourServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/ListTourServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/user/AddUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/AddUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/user/ListUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/ListUserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/country/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/country/addCountry.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/country/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/listUsers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/hotel/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/hotel/addHotel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/hotel/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/hotel/listHotels.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/tour/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/tour/addTour.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/tour/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/tour/listTours.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/addUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/country/listCountries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/country/addCountry.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/country/addCountry.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/country/listCountries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/country/listCountries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/hotel/addHotel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/hotel/addHotel.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/hotel/listHotels.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/hotel/listHotels.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/tour/addTour.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/tour/addTour.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/tour/listTours.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/tour/listTours.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/addUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/addUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user/listUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user/listUser.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -277,20 +281,60 @@
         </option>
       </method>
     </configuration>
+    <configuration name="index.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.17" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.html" />
+      <deployment>
+        <artifact name="App:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/App_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="index_html_App" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="App:war" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.AppMain" />
       <item itemvalue="Application.Test" />
       <item itemvalue="JUnit.All in App" />
       <item itemvalue="JUnit.AppTest" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.17" />
+      <item itemvalue="Tomcat Server.index.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Tomcat Server.index.html" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.AppMain" />
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +373,8 @@
       <workItem from="1563965929435" duration="3540000" />
       <workItem from="1564138834102" duration="5816000" />
       <workItem from="1564151767084" duration="1629000" />
-      <workItem from="1564468798297" duration="4720000" />
+      <workItem from="1564468798297" duration="10981000" />
+      <workItem from="1564485136741" duration="13581000" />
     </task>
     <task id="LOCAL-00001" summary="jpa">
       <created>1563882900279</created>
@@ -352,17 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1564417568112</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mapping">
+      <created>1564474342186</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564474342186</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -473,7 +516,8 @@
     <MESSAGE value="jpa&#10;add entity&#10;test class" />
     <MESSAGE value="jpa&#10;mapping" />
     <MESSAGE value="add servlets&#10;add views" />
-    <option name="LAST_COMMIT_MESSAGE" value="add servlets&#10;add views" />
+    <MESSAGE value="mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="mapping" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

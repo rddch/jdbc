@@ -1,4 +1,4 @@
-package servlets.country;
+package servlets;
 
 import entity.Country;
 

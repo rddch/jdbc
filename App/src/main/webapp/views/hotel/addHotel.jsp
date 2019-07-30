@@ -8,20 +8,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Add user</title>
+    <title>Добавить отель</title>
 </head>
 <body>
 <form method="post">
-    <label>First name:
-        <input type="text" name="fname"></br>
+    <label>Название отеля:
+        <input type="text" name="hotelName"></br>
     </label>
-    <label>Last name:
-        <input type="text" name="lname"></br>
+    <label>Отзывы:
+        <input type="text" name="review"></br>
     </label>
-    <label>Age:
-        <input type="text" name="age"><br>
-    </label>
-    <button type="submit">Send</button>
+    <button type="submit">Отправить</button>
 </form>
+<button onclick="location.href='/'">Назад</button>
 </body>
 </html>

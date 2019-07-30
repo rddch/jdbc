@@ -71,6 +71,14 @@ public class User {
         this.userId = userId;
     }
 
+    public List<User> listUser() {
+        Session session = HibernateSessionFactory.getSessionFactory().openSession();
+        session.beginTransaction();
+        List<User> result = (List<User>) session.createQuery("from entity.User").list();
+        session.getTransaction().commit();
+        return result;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -80,13 +88,5 @@ public class User {
                 ", age=" + age +
                 ", tours=" + tours +
                 '}';
-    }
-
-    public List<User> listUser() {
-        Session session = HibernateSessionFactory.getSessionFactory().openSession();
-        session.beginTransaction();
-        List<User> result = session.createQuery("FROM entity.User").list();
-        session.getTransaction().commit();
-        return result;
     }
 }

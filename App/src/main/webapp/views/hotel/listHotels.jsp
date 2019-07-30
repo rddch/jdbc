@@ -20,6 +20,6 @@
         }
     }
 %>
-
+<button onclick="location.href='/'">Назад</button>
 </body>
 </html>

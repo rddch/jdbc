@@ -11,7 +11,7 @@
     <!--user-->
     <servlet>
         <servlet-name>AddUserServlet</servlet-name>
-        <servlet-class>servlets.user.AddUserServlet</servlet-class>
+        <servlet-class>servlets.AddUserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>AddUserServlet</servlet-name>
@@ -19,16 +19,16 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ListUserServlet</servlet-name>
-        <servlet-class>servlets.user.ListUserServlet</servlet-class>
+        <servlet-class>servlets.ListUserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ListUserServlet</servlet-name>
-        <url-pattern>/listUsers</url-pattern>
+        <url-pattern>/listUser</url-pattern>
     </servlet-mapping>
     <!--tour-->
     <servlet>
         <servlet-name>AddTourServlet</servlet-name>
-        <servlet-class>servlets.tour.AddTourServlet</servlet-class>
+        <servlet-class>servlets.AddTourServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>AddTourServlet</servlet-name>
@@ -36,7 +36,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ListTourServlet</servlet-name>
-        <servlet-class>servlets.tour.ListTourServlet</servlet-class>
+        <servlet-class>servlets.ListTourServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ListTourServlet</servlet-name>
@@ -45,7 +45,7 @@
     <!--hotel-->
     <servlet>
         <servlet-name>AddHotelServlet</servlet-name>
-        <servlet-class>servlets.hotel.AddHotelServlet</servlet-class>
+        <servlet-class>servlets.AddHotelServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>AddHotelServlet</servlet-name>
@@ -53,15 +53,16 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ListHotelServlet</servlet-name>
-        <servlet-class>servlets.hotel.ListHotelServlet</servlet-class>
+        <servlet-class>servlets.ListHotelServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ListHotelServlet</servlet-name>
         <url-pattern>/listHotels</url-pattern>
     </servlet-mapping>
+    <!--Country-->
     <servlet>
         <servlet-name>AddCountryServlet</servlet-name>
-        <servlet-class>servlets.country.AddCountryServlet</servlet-class>
+        <servlet-class>servlets.AddCountryServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>AddCountryServlet</servlet-name>
@@ -69,11 +70,11 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ListCountryServlet</servlet-name>
-        <servlet-class>servlets.country.ListCountryServlet</servlet-class>
+        <servlet-class>servlets.ListCountryServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ListCountryServlet</servlet-name>
-        <url-pattern>/listCountry</url-pattern>
+        <url-pattern>/listCountries</url-pattern>
     </servlet-mapping>
 </web-app>
 

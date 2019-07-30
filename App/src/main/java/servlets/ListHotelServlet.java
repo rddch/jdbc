@@ -1,4 +1,4 @@
-package servlets.hotel;
+package servlets;
 
 import entity.Hotel;
 

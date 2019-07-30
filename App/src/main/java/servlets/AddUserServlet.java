@@ -1,4 +1,4 @@
-package servlets.user;
+package servlets;
 
 import entity.User;
 import org.hibernate.Session;
@@ -18,14 +18,18 @@ public class AddUserServlet extends javax.servlet.http.HttpServlet {
         User user = new User();
         user.setfName(fname);
         user.setlName(lname);
-        user.setlName(age);
+        user.setAge(Integer.parseInt(age));
         session.save(user);
+
+        request.setAttribute("userName", lname);
+        doGet(request, response);
+
         session.getTransaction().commit();
         session.close();
     }
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/user/addCountry.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/user/addUser.jsp");
         requestDispatcher.forward(request, response);
     }
 }

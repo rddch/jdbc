@@ -16,10 +16,11 @@
     List<Country> countries = (List<Country>) request.getAttribute("listCountries");
     if (countries != null && !countries.isEmpty()) {
         for (Object o : countries) {
-            out.print("<li>" + o.toString() + "/li");
+            out.print("<li>" + o + "/li");
         }
     }
 %>
+<button onclick="location.href='/'">Назад</button>
 
 </body>
 </html>

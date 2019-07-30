@@ -11,17 +11,24 @@
     <title>Add user</title>
 </head>
 <body>
+
+<%
+    if (request.getAttribute("userName") != null) {
+        out.println("<p>User '" + request.getAttribute("userName") + "' added</p>");
+    }
+%>
 <form method="post">
-    <label>First name:
+    <label>Имя:
         <input type="text" name="fname"></br>
     </label>
-    <label>Last name:
+    <label>Фамилия:
         <input type="text" name="lname"></br>
     </label>
-    <label>Age:
+    <label>Возраст:
         <input type="text" name="age"><br>
     </label>
-    <button type="submit">Send</button>
+    <button type="submit">Отправить</button>
 </form>
+<button onclick="location.href='/'">Назад</button>
 </body>
 </html>

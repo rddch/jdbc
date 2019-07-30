@@ -1,4 +1,4 @@
-package servlets.user;
+package servlets;
 
 import entity.User;
 
@@ -14,8 +14,8 @@ public class ListUserServlet extends javax.servlet.http.HttpServlet {
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         List<User> users = new User().listUser();
-        request.setAttribute("listUsers", users);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/user/listUsers.jsp");
+        request.setAttribute("listUser", users);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/user/listUser.jsp");
         requestDispatcher.forward(request, response);
     }
 }
