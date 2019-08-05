@@ -1,7 +1,9 @@
-package DAO;
+package service;
 
-import Entity.User;
+import dao.EntityDAO;
+import entity.User;
 import pool.ConnectionPool;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,11 +17,9 @@ public class UserImp implements EntityDAO<User> {
 
     @Override
     public void add(User user) {
-        PreparedStatement preparedStatement  = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement(
-                    "INSERT INTO user (fname, lname, age, user_id) VALUES (?, ?, ?, ?)"
-            );
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement(
+                "INSERT INTO user (fname, lname, age, user_id) VALUES (?, ?, ?, ?)"
+        )) {
             preparedStatement.setString(1, user.getfName());
             preparedStatement.setString(2, user.getlName());
             preparedStatement.setInt(3, user.getAge());
@@ -27,20 +27,12 @@ public class UserImp implements EntityDAO<User> {
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     @Override
     public void read(long id) {
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement("SELECT * FROM user WHERE user_id = ?");
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement("SELECT * FROM user WHERE user_id = ?");) {
             preparedStatement.setLong(1, id);
             preparedStatement.execute();
             ResultSet resultSet = preparedStatement.getResultSet();
@@ -52,20 +44,12 @@ public class UserImp implements EntityDAO<User> {
             wiew(user_id, fname, lname, age);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     @Override
     public void all() {
-        Statement statement = null;
-        try {
-            statement = cp.getConnection().createStatement();
+        try (Statement statement = cp.getConnection().createStatement();) {
             ResultSet resultSet = statement.executeQuery("SELECT * FROM user");
             while (resultSet.next()) {
                 long user_id = resultSet.getLong("user_id");
@@ -76,22 +60,14 @@ public class UserImp implements EntityDAO<User> {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                statement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     @Override
     public void update(User user, long id) {
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement(
-                    "UPDATE user SET fname = ?, lname = ?, age = ? WHERE user_id = ?"
-            );
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement(
+                "UPDATE user SET fname = ?, lname = ?, age = ? WHERE user_id = ?"
+        )) {
             preparedStatement.setString(1, user.getfName());
             preparedStatement.setString(2, user.getlName());
             preparedStatement.setInt(3, user.getAge());
@@ -99,30 +75,16 @@ public class UserImp implements EntityDAO<User> {
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     @Override
     public void delete(long id) {
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement("DELETE FROM user WHERE user_id = ?");
+        try (PreparedStatement     preparedStatement = cp.getConnection().prepareStatement("DELETE FROM user WHERE user_id = ?")) {
             preparedStatement.setLong(1, id);
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 

@@ -1,7 +1,7 @@
-package DAO;
+package service;
 
-import Entity.Country;
-import Entity.Tour;
+import entity.Country;
+import entity.Tour;
 import pool.ConnectionPool;
 
 import java.sql.PreparedStatement;
@@ -17,33 +17,23 @@ public class CountryTour {
 
 
     public void add(Country country, Tour tour) throws SQLException {
-        PreparedStatement preparedStatement  = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement(
-                    "INSERT INTO  country_tour (country_id, tour_id) VALUES (?, ?)"
-            );
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement(
+                "INSERT INTO  country_tour (country_id, tour_id) VALUES (?, ?)"
+        )) {
             preparedStatement.setLong(1, country.getCountryId());
             preparedStatement.setLong(2, tour.getTourId());
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     public void read(long id) {
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement(
-                    "SELECT c.country, t.tour_name FROM country c " +
-                       "INNER JOIN tour t ON c.country_id = t.tour_id " +
-                       "WHERE country_id = ?"
-            );
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement(
+                "SELECT c.country, t.tour_name FROM country c " +
+                        "INNER JOIN tour t ON c.country_id = t.tour_id " +
+                        "WHERE country_id = ?"
+        )) {
             preparedStatement.setLong(1, id);
             preparedStatement.execute();
             ResultSet resultSet = preparedStatement.getResultSet();
@@ -53,22 +43,13 @@ public class CountryTour {
             wiew(tour_name, country);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     public void all() {
-        Statement statement = null;
-        try {
-            statement = cp.getConnection().createStatement();
+        try (Statement statement = cp.getConnection().createStatement();) {
             ResultSet resultSet = statement.executeQuery("SELECT c.country, t.tour_name FROM country c " +
-                                                            "INNER JOIN tour t ON c.country_id = t.tour_id"
-            );
+                                                            "INNER JOIN tour t ON c.country_id = t.tour_id");
             while (resultSet.next()) {
                 String tout_name = resultSet.getString("tour_name");
                 String country = resultSet.getString("country");
@@ -76,33 +57,17 @@ public class CountryTour {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                statement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
-
-
     public void delete(long id) {
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement(
-                    "DELETE FROM country_tour WHERE country_id = ? OR tour_id = ?"
-            );
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement(
+                "DELETE FROM country_tour WHERE country_id = ? OR tour_id = ?"
+        )) {
             preparedStatement.setLong(1, id);
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
@@ -112,5 +77,4 @@ public class CountryTour {
                         ", в страну " + country +
                         " }");
     }
-
 }

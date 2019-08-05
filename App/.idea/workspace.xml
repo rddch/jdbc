@@ -2,29 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90344d6d-7694-4ad1-a50d-b57b7bec3ef8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/CountryTour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/TourHotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/CountryImpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/HotelImpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/TourImpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/UserImpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d20aaad5-5ea0-4d00-8051-d62b1b4c332d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d20aaad5-5ea0-4d00-8051-d62b1b4c332d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/CountryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/CountryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/HotelImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/HotelImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/TourImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/TourImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DAO/CountryImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/CountryImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DAO/HotelImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/HotelImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DAO/TourImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/TourImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DAO/UserImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/UserImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Entity/Country.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Entity/Hotel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Tour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Entity/Tour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/CountryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CountryImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/CountryTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CountryTour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/EntityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/EntityDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/HotelImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HotelImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/TourHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TourHotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/TourImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TourImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserTour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Tour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pool/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pool/ConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/CountryImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/CountryTour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/EntityDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/HotelImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/TourHotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/TourImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/UserImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/UserTour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Hotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Tour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/User.class" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,62 +72,31 @@
     </expand>
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="Tag Library Descriptor" />
         <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Entities/Country.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entities/Hotel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entities/Tour.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entities/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/dtoDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTO/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTO/Country.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTO/Hotel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/hotelDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/userDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/tourDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTO/Tour.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/userDAOimp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/countryDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entitys/Country.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entitys/Hotel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entitys/Tour.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entitys/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/EntitysDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pool/ConnectionPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entity/Country.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/EntityDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entity/Tour.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entity/Hotel.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/CountryImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/CountryTour.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/HotelImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/TourHotel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/TourImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/UserImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/UserTour.java" />
+        <option value="Ruslan Derkach &lt;r.d.derkach@gmail.com&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -125,98 +105,55 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="com.derkach Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-152" />
     <option name="y" value="294" />
     <option name="width" value="653" />
     <option name="height" value="562" />
   </component>
+  <component name="ProjectId" id="1P19w9wzKfdF0mqPnS5lAYrcEKq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="App" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="App" type="b2602c69:ProjectViewProjectNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="d20aaad5-5ea0-4d00-8051-d62b1b4c332d" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563529922954" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563978348680" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Изображения" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/service" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="service" />
+      <recent name="" />
+      <recent name="DAO" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="dao" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/service" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -230,7 +167,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CountryImpTest.read">
+    <configuration name="AppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.AppMain" />
+      <module name="App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="App" />
@@ -238,8 +188,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in App" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="App" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="App" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountryImpTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.CountryImpTest" />
+      <option name="METHOD_NAME" value="read" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AppMain" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="JUnit.All in App" />
+      <item itemvalue="JUnit.AppTest" />
+      <item itemvalue="JUnit.CountryImpTest.read" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CountryImpTest.read" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.AppMain" />
+        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -261,11 +258,37 @@
       <workItem from="1563518590702" duration="11152000" />
       <workItem from="1563532540338" duration="10286000" />
       <workItem from="1563543739719" duration="2644000" />
+      <workItem from="1563778346261" duration="2144000" />
+      <workItem from="1563872655305" duration="2773000" />
+      <workItem from="1563878234339" duration="15800000" />
+      <workItem from="1563948984087" duration="2654000" />
+      <workItem from="1563957397422" duration="4809000" />
+      <workItem from="1563965929435" duration="3540000" />
+      <workItem from="1565031004677" duration="681000" />
     </task>
+    <task id="LOCAL-00001" summary="jpa">
+      <created>1563882900279</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563882900279</updated>
+    </task>
+    <task id="LOCAL-00002" summary="jpa&#10;add entity&#10;test class">
+      <created>1563894079345</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563894079345</updated>
+    </task>
+    <task id="LOCAL-00003" summary="try with resources">
+      <created>1565027090319</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565027090319</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79479000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -276,369 +299,73 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <layout>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Web" order="4" side_tool="true" />
-      <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.275" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32954547" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5060606" side_tool="true" weight="0.32899022" />
-      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32954547" />
-      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49924242" weight="0.32899022" />
-      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
-      <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.4939394" weight="0.32899022" />
-      <window_info anchor="bottom" id="Debug" order="11" sideWeight="0.49924242" weight="0.39739415" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="14" weight="0.32954547" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32954547" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.32954547" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="jpa" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="jpa" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="jpa" />
+    <MESSAGE value="jpa&#10;add entity&#10;test class" />
+    <MESSAGE value="jpa&#10;mapping" />
+    <MESSAGE value="try with resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="try with resources" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/90303589-c5f0-4f78-8a9a-7e4bcad845b8/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d20aaad5-5ea0-4d00-8051-d62b1b4c332d/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/hotelDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/tourDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/countryDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/EntitysDAOimp.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pool/ConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.sql/java/sql/PreparedStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/Hotel.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="uml://DATABASE/d20aaad5-5ea0-4d00-8051-d62b1b4c332d.SCHEMA:travel_agency">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>d20aaad5-5ea0-4d00-8051-d62b1b4c332d.SCHEMA:travel_agency</OriginalElement>
-          <nodes>
-            <node x="" y="">d20aaad5-5ea0-4d00-8051-d62b1b4c332d.TABLE:travel_agency.hotel</node>
-            <node x="" y="">d20aaad5-5ea0-4d00-8051-d62b1b4c332d.TABLE:travel_agency.tour</node>
-            <node x="" y="">d20aaad5-5ea0-4d00-8051-d62b1b4c332d.TABLE:travel_agency.tour_hotel</node>
-            <node x="" y="">d20aaad5-5ea0-4d00-8051-d62b1b4c332d.TABLE:travel_agency.country</node>
-            <node x="" y="">d20aaad5-5ea0-4d00-8051-d62b1b4c332d.TABLE:travel_agency.user_tour</node>
-            <node x="" y="">d20aaad5-5ea0-4d00-8051-d62b1b4c332d.TABLE:travel_agency.country_tour</node>
-            <node x="" y="">d20aaad5-5ea0-4d00-8051-d62b1b4c332d.TABLE:travel_agency.user</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.8768060836501901" x="932.0" y="193.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/Tour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/user_tour">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/tour_hotel">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/country_tour">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/hotel">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/tour">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d20aaad5-5ea0-4d00-8051-d62b1b4c332d/schema/travel_agency/table/country">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/EntityDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/HotelImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/CountryTour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/CountryImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="96" column="9" lean-forward="true" selection-start-line="82" selection-start-column="6" selection-end-line="96" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/UserTour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/TourHotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/TourImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/UserImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>App:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>App</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.google.protobuf:protobuf-java:3.6.1</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

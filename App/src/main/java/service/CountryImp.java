@@ -1,8 +1,9 @@
-package DAO;
+package service;
 
-import Entity.Country;
-import Entity.Hotel;
+import dao.EntityDAO;
+import entity.Country;
 import pool.ConnectionPool;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -16,28 +17,18 @@ public class CountryImp implements EntityDAO<Country> {
 
     @Override
     public void add(Country country) {
-        PreparedStatement preparedStatement  = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement("INSERT INTO  country (country, country_id) VALUES (?, ?)");
+        try (PreparedStatement preparedStatement  = cp.getConnection().prepareStatement("INSERT INTO  country (country, country_id) VALUES (?, ?)")) {
             preparedStatement.setString(1, country.getCountry());
             preparedStatement.setLong(2, country.getCountryId());
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     @Override
     public void read(long id) {
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement("SELECT * FROM country WHERE country_id = ?");
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement("SELECT * FROM country WHERE country_id = ?")) {
             preparedStatement.setLong(1, id);
             preparedStatement.execute();
             ResultSet resultSet = preparedStatement.getResultSet();
@@ -47,20 +38,12 @@ public class CountryImp implements EntityDAO<Country> {
             wiew(country_id, country);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     @Override
     public void all() {
-        Statement statement = null;
-        try {
-            statement = cp.getConnection().createStatement();
+        try(Statement statement = cp.getConnection().createStatement()) {
             ResultSet resultSet = statement.executeQuery("SELECT * FROM country");
             while (resultSet.next()) {
                 long country_id = resultSet.getLong("country_id");
@@ -69,31 +52,17 @@ public class CountryImp implements EntityDAO<Country> {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                statement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     @Override
     public void update(Country country, long id) {
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement("UPDATE country SET country = ? WHERE country_id = ?");
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement("UPDATE country SET country = ? WHERE country_id = ?")) {
             preparedStatement.setString(1, country.getCountry());
             preparedStatement.setLong(2, id);
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
@@ -102,8 +71,8 @@ public class CountryImp implements EntityDAO<Country> {
         PreparedStatement preparedStatement = null;
         try {
             preparedStatement = cp.getConnection().prepareStatement(
-                    "UPDATE hotel SET country_id = null WHERE country_id = ?"
-            );
+                "UPDATE hotel SET country_id = null WHERE country_id = ?");
+
             preparedStatement.setLong(1, id);
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
 
@@ -126,12 +95,6 @@ public class CountryImp implements EntityDAO<Country> {
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 

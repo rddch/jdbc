@@ -1,6 +1,7 @@
-package DAO;
+package service;
 
-import Entity.Tour;
+import dao.EntityDAO;
+import entity.Tour;
 import pool.ConnectionPool;
 
 import java.sql.PreparedStatement;
@@ -16,30 +17,20 @@ public class TourImp implements EntityDAO<Tour> {
 
     @Override
     public void add(Tour tour) {
-        PreparedStatement preparedStatement  = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement(
-                    "INSERT INTO  tour (tour_name, tour_id) VALUES (?, ?)"
-            );
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement(
+                "INSERT INTO  tour (tour_name, tour_id) VALUES (?, ?)"
+        )) {
             preparedStatement.setString(1, tour.getTourName());
             preparedStatement.setLong(2, tour.getTourId());
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     @Override
     public void read(long id) {
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement("SELECT * FROM tour WHERE tour_id = ?");
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement("SELECT * FROM tour WHERE tour_id = ?")) {
             preparedStatement.setLong(1, id);
             preparedStatement.execute();
             ResultSet resultSet = preparedStatement.getResultSet();
@@ -49,20 +40,13 @@ public class TourImp implements EntityDAO<Tour> {
             wiew(tour_id, tour_name);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     @Override
     public void all() {
-        Statement statement = null;
-        try {
-            statement = cp.getConnection().createStatement();
+        try (Statement statement = cp.getConnection().createStatement();) {
+
             ResultSet resultSet = statement.executeQuery("SELECT * FROM tour");
             while (resultSet.next()) {
                 long tour_id = resultSet.getLong("tour_id");
@@ -71,49 +55,27 @@ public class TourImp implements EntityDAO<Tour> {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                statement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     @Override
     public void update(Tour tour, long id) {
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement("UPDATE tour SET tour_name = ? WHERE tour_id = ?");
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement("UPDATE tour SET tour_name = ? WHERE tour_id = ?")) {
             preparedStatement.setString(1, tour.getTourName());
             preparedStatement.setLong(2, id);
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     @Override
     public void delete(long id) {
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = cp.getConnection().prepareStatement("DELETE FROM tour WHERE tour_id = ?");
+        try (PreparedStatement preparedStatement = cp.getConnection().prepareStatement("DELETE FROM tour WHERE tour_id = ?");) {
             preparedStatement.setLong(1, id);
             logger.info("Query OK, " +  preparedStatement.executeUpdate() + " row affected!");
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
     }
 
